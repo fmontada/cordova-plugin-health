@@ -78,7 +78,9 @@
 
   <!-- android -->
   <platform name="android">
-    <framework src="com.google.android.gms:play-services-fitness:16.0.0" />
+    <framework src="com.google.android.gms:play-services-fitness:+" />
+
+    <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
 
     <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -99,5 +101,8 @@
       <clobbers target="navigator.health" />
     </js-module>
   </platform>
+
+
+
 
 </plugin>
