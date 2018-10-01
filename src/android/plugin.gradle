@@ -2,3 +2,7 @@ repositories {
    jcenter()
    mavenCentral()
 }
+
+dependencies {
+    compile 'com.google.android.gms:play-services:9.0.0'
+}
